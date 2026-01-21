@@ -40,36 +40,46 @@ export function About() {
         <span className="h-px flex-1 bg-border max-w-xs" />
       </h2>
 
+
+
       <div className="grid gap-8 lg:grid-cols-3">
         <div
-          className={`lg:col-span-2 space-y-4 text-muted-foreground leading-relaxed transition-all duration-700 delay-100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+          className={`lg:col-span-2 space-y-4 text-muted-foreground leading-relaxed transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+            }`}
         >
           <p>
-            {"I'm a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of "}
-            <span className="text-primary font-medium hover:underline decoration-primary/50 transition-all cursor-default">design</span>
-            {" and "}
-            <span className="text-primary font-medium hover:underline decoration-primary/50 transition-all cursor-default">development</span>
-            {", creating experiences that not only look great but are meticulously built for performance and usability."}
+            {"I'm a web developer who enjoys building reliable and scalable web applications. I focus on writing clean logic and creating systems that work smoothly behind the scenes, while still delivering clear and user-friendly interfaces."}
           </p>
+
           <p>
-            {"Currently, I'm a Senior Full Stack Developer at "}
+            {"I’ve completed my Bachelor's degree and am currently working as a Web Developer at "}
             <span className="text-foreground font-medium relative group cursor-default">
-              TechCorp
+              Surkhet App
               <span className="absolute bottom-0 left-0 w-0 h-px bg-primary group-hover:w-full transition-all duration-300" />
             </span>
-            {", specializing in building modern web applications. I contribute to the creation and maintenance of systems that power our platform's core features."}
+            {", a startup where I contribute to building and maintaining modern web applications."}
           </p>
+
           <p>
-            {"In the past, I've had the opportunity to develop software across a variety of settings — from "}
-            <span className="text-foreground font-medium">startups</span>
-            {" and "}
-            <span className="text-foreground font-medium">agencies</span>
-            {" to "}
-            <span className="text-foreground font-medium">large enterprises</span>
-            {"."}
+            {"I’m actively learning and working with "}
+            <span className="text-primary font-medium hover:underline decoration-primary/50 transition-all cursor-default">
+              TypeScript
+            </span>
+            {", "}
+            <span className="text-primary font-medium hover:underline decoration-primary/50 transition-all cursor-default">
+              Zod
+            </span>
+            {", "}
+            <span className="text-primary font-medium hover:underline decoration-primary/50 transition-all cursor-default">
+              TanStack Start
+            </span>
+            {", and "}
+            <span className="text-primary font-medium hover:underline decoration-primary/50 transition-all cursor-default">
+              shadcn/ui
+            </span>
+            {", with a strong interest in backend logic, type safety, and scalable system design."}
           </p>
         </div>
-
         {/* Skills Grid */}
         <div
           className={`transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
@@ -93,7 +103,7 @@ export function About() {
           </div>
         </div>
       </div>
-    </section>
+    </section >
   )
 }
 
