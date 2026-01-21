@@ -1,8 +1,8 @@
 
 import { ArrowUpRight } from "lucide-react"
-import { Badge } from "@/components/ui/badge"
 import { useEffect, useRef, useState } from "react"
 import { Link } from "@tanstack/react-router"
+import { Badge } from "./ui/badge"
 
 const experiences = [
   {
