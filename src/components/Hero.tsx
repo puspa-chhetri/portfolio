@@ -67,8 +67,8 @@ export function Hero() {
           <h1
             className={`text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-balance transition-all duration-700 delay-100 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
           >
-            <span className="inline-block hover:text-primary transition-colors duration-300">Alex</span>{" "}
-            <span className="inline-block hover:text-primary transition-colors duration-300">Chen</span>
+            <span className="inline-block hover:text-primary transition-colors duration-300">Puspa</span>{" "}
+            <span className="inline-block hover:text-primary transition-colors duration-300">BC</span>
             <span className="text-primary">.</span>
           </h1>
 
@@ -86,8 +86,7 @@ export function Hero() {
           <p
             className={`text-muted-foreground text-lg max-w-md leading-relaxed transition-all duration-700 delay-300 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
           >
-            I build <span className="text-foreground font-medium">accessible</span>, <span className="text-foreground font-medium">pixel-perfect</span> digital experiences for the web.
-          </p>
+            I build <span className="text-foreground font-medium">reliable</span>, <span className="text-foreground font-medium">scalable</span> web applications with a focus on performance and usability.          </p>
         </div>
 
         {/* Navigation Links */}
