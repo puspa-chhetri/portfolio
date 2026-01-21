@@ -1,7 +1,7 @@
 import { ArrowUpRight, Mail, Sparkles } from "lucide-react"
-import { Button } from "@/components/ui/button"
 import { useEffect, useRef, useState } from "react"
 import { Link } from "@tanstack/react-router"
+import { Button } from "./ui/button"
 
 export function Contact() {
   const [isVisible, setIsVisible] = useState(false)

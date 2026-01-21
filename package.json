@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@clerk/clerk-react": "^5.49.0",
+    "@clerk/tanstack-react-start": "^0.27.15",
     "@convex-dev/react-query": "0.1.0",
+    "@radix-ui/react-slot": "^1.2.4",
     "@tailwindcss/vite": "^4.0.6",
     "@tanstack/react-devtools": "^0.7.0",
     "@tanstack/react-query": "^5.66.5",
