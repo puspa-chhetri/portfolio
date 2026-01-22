@@ -6,40 +6,31 @@ import { Badge } from "./ui/badge"
 
 const experiences = [
   {
-    period: "2023 — Present",
-    title: "Senior Full Stack Developer",
-    company: "TechCorp",
-    url: "https://example.com",
-    description:
-      "Build and maintain critical applications used by millions of users. Lead technical initiatives across cross-functional teams, implementing best practices in web accessibility and performance optimization.",
-    technologies: ["TypeScript", "React", "Next.js", "Node.js", "PostgreSQL"],
-  },
-  {
-    period: "2021 — 2023",
-    title: "Full Stack Developer",
-    company: "StartupHub",
-    url: "https://example.com",
-    description:
-      "Developed and shipped high-quality features for diverse clients. Collaborated with designers and product managers to create seamless user experiences from concept to deployment.",
-    technologies: ["JavaScript", "Vue.js", "Python", "Django", "AWS"],
-  },
-  {
-    period: "2019 — 2021",
-    title: "Frontend Developer",
-    company: "DigitalAgency",
-    url: "https://example.com",
-    description:
-      "Built responsive, accessible websites and web applications for various clients across different industries. Focused on performance optimization and cross-browser compatibility.",
-    technologies: ["JavaScript", "React", "Sass", "Webpack", "REST APIs"],
-  },
-  {
-    period: "2018 — 2019",
+    period: "2025 — Present",
     title: "Junior Developer",
-    company: "WebStudio",
+    company: "Surkhet App",
     url: "https://example.com",
     description:
       "Started my career building custom WordPress themes and plugins. Learned the fundamentals of web development and collaborated with senior developers on client projects.",
-    technologies: ["HTML", "CSS", "JavaScript", "PHP", "WordPress"],
+    technologies: ["TypeScript", "React", "Tanstack Start", "Zod", "Shadcn"],
+  },
+  {
+    period: "2025-jul — 2025-oct",
+    title: "Inten",
+    company: "Genese Solution",
+    url: "https://example.com",
+    description:
+      "Worked on AWS Cloud infrastructure, including EC2 deployment, LAMP stack setup, and web application hosting. Gained hands-on experience in Linux server management, database integration, and security configuration",
+    technologies: ["EC2", "AWS IAM", "Amazon S3", "AWS Lambda", "RDS", "AWS CloudFormation"],
+  },
+  {
+    period: "2024-Dec — 2025-Mar",
+    title: "Intern",
+    company: "Green Leaf InfoTech Pvt.Ltd.",
+    url: "https://example.com",
+    description:
+      "Designed and developed responsive websites, focusing on UI consistency, mobile compatibility, and performance optimization.",
+    technologies: ["JavaScript", "Bootstrap", "HTML", "CSS", "Firebase", "jQuery"],
   },
 ]
 

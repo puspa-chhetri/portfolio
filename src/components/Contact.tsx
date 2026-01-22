@@ -1,6 +1,5 @@
 import { ArrowUpRight, Mail, Sparkles } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
-import { Link } from "@tanstack/react-router"
 import { Button } from "./ui/button"
 
 export function Contact() {
@@ -56,20 +55,31 @@ export function Contact() {
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
+
           <Button
             asChild
             size="lg"
             variant="outline"
-            className={`relative overflow-hidden border-primary text-primary hover:text-primary-foreground transition-all duration-500 px-8 py-6 text-lg ${isHovered ? 'shadow-lg shadow-primary/25' : ''}`}
+            className={`relative overflow-hidden border-primary text-primary hover:text-primary-foreground transition-all duration-500 px-8 py-6 text-lg ${isHovered ? "shadow-lg shadow-primary/25" : ""
+              }`}
           >
-            <Link to="mailto:hello@alexchen.dev">
-              <span className={`absolute inset-0 bg-primary transition-transform duration-500 ${isHovered ? 'translate-y-0' : 'translate-y-full'}`} />
+            <a href="mailto:puspachhetri121@gmail.com">
+              <span
+                className={`absolute inset-0 bg-primary transition-transform duration-500 ${isHovered ? "translate-y-0" : "translate-y-full"
+                  }`}
+              />
               <span className="relative flex items-center gap-2">
-                <Mail className={`w-5 h-5 transition-transform duration-300 ${isHovered ? 'rotate-12' : ''}`} />
+                <Mail
+                  className={`w-5 h-5 transition-transform duration-300 ${isHovered ? "rotate-12" : ""
+                    }`}
+                />
                 Say Hello
-                <ArrowUpRight className={`w-5 h-5 transition-transform duration-300 ${isHovered ? 'translate-x-1 -translate-y-1' : ''}`} />
+                <ArrowUpRight
+                  className={`w-5 h-5 transition-transform duration-300 ${isHovered ? "translate-x-1 -translate-y-1" : ""
+                    }`}
+                />
               </span>
-            </Link>
+            </a>
           </Button>
         </div>
 
