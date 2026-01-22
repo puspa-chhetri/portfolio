@@ -7,7 +7,7 @@ const socialLinks = [
   { icon: Github, href: "https://github.com", label: "GitHub" },
   { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
   { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-  { icon: Mail, href: "mailto:hello@example.com", label: "Email" },
+  { icon: Mail, href: "mailto:puspachhetri121@gmail.com", label: "Email" },
 ]
 
 const navLinks = [
@@ -17,7 +17,7 @@ const navLinks = [
   { label: "CONTACT", href: "#contact", num: "04" },
 ]
 
-const roles = ["Full Stack Developer", "UI/UX Enthusiast", "Open Source Contributor", "Problem Solver"]
+const roles = ["Web Developer", "JavaScript Enthusiast", "Web Application Developer", "Problem Solver"]
 
 export function Hero() {
   const [mounted, setMounted] = useState(false)

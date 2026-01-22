@@ -36,32 +36,6 @@ export function Footer() {
           </span>
         </p>
 
-        <p className="text-xs text-muted-foreground/70 flex items-center justify-center gap-1">
-          Made with
-          <Heart className="w-3 h-3 text-primary animate-pulse" />
-          using
-          <Link
-            to="https://nextjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-primary transition-colors underline-offset-2 hover:underline"
-          >
-            Next.js
-          </Link>
-          &
-          <Link
-            to="https://tailwindcss.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-primary transition-colors underline-offset-2 hover:underline"
-          >
-            Tailwind CSS
-          </Link>
-        </p>
-
-        <p className="text-xs font-mono text-muted-foreground/50">
-          v1.0.0
-        </p>
       </div>
     </footer>
   )

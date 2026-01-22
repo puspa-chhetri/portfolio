@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react"
 
 const skills = [
-  "TypeScript", "React", "Next.js", "Node.js", "Python",
-  "PostgreSQL", "MongoDB", "AWS", "Docker", "GraphQL"
+  "TypeScript", "React", "JavaScript", "TanStack Start", "Zod",
+  "Shadcn", "AWS", "Docker", "Firebase"
 ]
 
 export function About() {
@@ -52,7 +52,7 @@ export function About() {
           </p>
 
           <p>
-            {"I’ve completed my Bachelor's degree and am currently working as a Web Developer at "}
+            {"I am currently working as a Web Developer at "}
             <span className="text-foreground font-medium relative group cursor-default">
               Surkhet App
               <span className="absolute bottom-0 left-0 w-0 h-px bg-primary group-hover:w-full transition-all duration-300" />
@@ -85,7 +85,7 @@ export function About() {
           className={`transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
         >
           <h3 className="text-sm font-semibold text-foreground mb-4">Technologies I work with:</h3>
-          <div className="grid grid-cols-2 gap-2">
+          <div className="grid gap-2 ">
             {skills.map((skill, index) => (
               <div
                 key={skill}
