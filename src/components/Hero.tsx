@@ -111,7 +111,7 @@ export function Hero() {
 
           {/* Description */}
           <p
-            className={`text-muted-foreground text-lg max-w-md leading-relaxed transition-all duration-700 delay-300 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+            className={`text-muted-foreground py-4 text-lg max-w-md leading-relaxed transition-all duration-700 delay-300 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
           >
             I build <span className="text-foreground font-medium">reliable</span>, <span className="text-foreground font-medium">scalable</span> web applications with a focus on performance and usability.          </p>
         </div>
