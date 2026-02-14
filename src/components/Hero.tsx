@@ -1,6 +1,6 @@
 
 import { Link } from "@tanstack/react-router"
-import { Github, Linkedin, Twitter, Mail, ArrowDown } from "lucide-react"
+import { Github, Linkedin, Twitter, Mail, ArrowDown, ArrowUp } from "lucide-react"
 import { useEffect, useState } from "react"
 
 const socialLinks = [
@@ -24,9 +24,26 @@ export function Hero() {
   const [roleIndex, setRoleIndex] = useState(0)
   const [displayedRole, setDisplayedRole] = useState("")
   const [isDeleting, setIsDeleting] = useState(false)
+  const [isAtBottom, setIsAtBottom] = useState(false)
 
   useEffect(() => {
     setMounted(true)
+  }, [])
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const pageBottom = document.documentElement.scrollHeight - window.innerHeight
+      setIsAtBottom(window.scrollY >= pageBottom - 8)
+    }
+
+    handleScroll()
+    window.addEventListener("scroll", handleScroll, { passive: true })
+    window.addEventListener("resize", handleScroll)
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+      window.removeEventListener("resize", handleScroll)
+    }
   }, [])
 
   // Typewriter effect
@@ -52,7 +69,12 @@ export function Hero() {
     return () => clearTimeout(timeout)
   }, [displayedRole, isDeleting, roleIndex])
 
-  const handleScrollDown = () => {
+  const handleScrollButton = () => {
+    if (isAtBottom) {
+      window.scrollTo({ top: 0, behavior: "smooth" })
+      return
+    }
+
     const pageBottom = document.documentElement.scrollHeight - window.innerHeight
     const nextY = Math.min(window.scrollY + Math.round(window.innerHeight * 0.85), pageBottom)
     window.scrollTo({ top: nextY, behavior: "smooth" })
@@ -147,11 +169,15 @@ export function Hero() {
       >
         <button
           type="button"
-          onClick={handleScrollDown}
+          onClick={handleScrollButton}
           className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group"
         >
-          <span className="text-xs font-mono tracking-wider">Scroll</span>
-          <ArrowDown className="w-4 h-4 animate-bounce" />
+          <span className="text-xs font-mono tracking-wider">{isAtBottom ? "Top" : "Scroll"}</span>
+          {isAtBottom ? (
+            <ArrowUp className="w-4 h-4 animate-bounce" />
+          ) : (
+            <ArrowDown className="w-4 h-4 animate-bounce" />
+          )}
         </button>
       </div>
     </section>
