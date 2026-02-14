@@ -9,7 +9,7 @@ const experiences = [
     period: "2025 — Present",
     title: "Junior Developer",
     company: "Surkhet App",
-    url: "https://example.com",
+    url: "https://surkhet.app/",
     description:
       "Started my career building custom WordPress themes and plugins. Learned the fundamentals of web development and collaborated with senior developers on client projects.",
     technologies: ["TypeScript", "React", "Tanstack Start", "Zod", "Shadcn"],
@@ -18,7 +18,7 @@ const experiences = [
     period: "2025-jul — 2025-oct",
     title: "Inten",
     company: "Genese Solution",
-    url: "https://example.com",
+    url: "https://www.genesesolution.com/",
     description:
       "Worked on AWS Cloud infrastructure, including EC2 deployment, LAMP stack setup, and web application hosting. Gained hands-on experience in Linux server management, database integration, and security configuration",
     technologies: ["EC2", "AWS IAM", "Amazon S3", "AWS Lambda", "RDS", "AWS CloudFormation"],
@@ -27,7 +27,7 @@ const experiences = [
     period: "2024-Dec — 2025-Mar",
     title: "Intern",
     company: "Green Leaf InfoTech Pvt.Ltd.",
-    url: "https://example.com",
+    url: "https://greenleafinfotech.com/",
     description:
       "Designed and developed responsive websites, focusing on UI consistency, mobile compatibility, and performance optimization.",
     technologies: ["JavaScript", "Bootstrap", "HTML", "CSS", "Firebase", "jQuery"],
