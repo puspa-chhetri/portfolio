@@ -52,6 +52,12 @@ export function Hero() {
     return () => clearTimeout(timeout)
   }, [displayedRole, isDeleting, roleIndex])
 
+  const handleScrollDown = () => {
+    const pageBottom = document.documentElement.scrollHeight - window.innerHeight
+    const nextY = Math.min(window.scrollY + Math.round(window.innerHeight * 0.85), pageBottom)
+    window.scrollTo({ top: nextY, behavior: "smooth" })
+  }
+
   return (
     <section className="min-h-screen flex flex-col justify-between pb-6 lg:py-24">
       <div className="flex-1 flex flex-col justify-center">
@@ -139,13 +145,14 @@ export function Hero() {
       <div
         className={`flex items-center justify-center mt-12 transition-all duration-700 delay-1000 ${mounted ? 'opacity-100' : 'opacity-0'}`}
       >
-        <Link
-          to="#about"
+        <button
+          type="button"
+          onClick={handleScrollDown}
           className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group"
         >
           <span className="text-xs font-mono tracking-wider">Scroll</span>
           <ArrowDown className="w-4 h-4 animate-bounce" />
-        </Link>
+        </button>
       </div>
     </section>
   )
