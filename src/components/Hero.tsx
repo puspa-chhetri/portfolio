@@ -53,9 +53,9 @@ export function Hero() {
   }, [displayedRole, isDeleting, roleIndex])
 
   return (
-    <section className="min-h-screen flex flex-col top-0 justify-between py-12 lg:py-24">
+    <section className="min-h-screen flex flex-col justify-between pb-6 lg:py-24">
       <div className="flex-1 flex flex-col justify-center">
-        <div className="space-y-6">
+        <div className="space-y-1">
           {/* Animated greeting */}
           <div
             className={`transition-all duration-700 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
@@ -137,7 +137,7 @@ export function Hero() {
 
       {/* Scroll indicator */}
       <div
-        className={`hidden lg:flex items-center justify-center mt-12 transition-all duration-700 delay-1000 ${mounted ? 'opacity-100' : 'opacity-0'}`}
+        className={`flex items-center justify-center mt-12 transition-all duration-700 delay-1000 ${mounted ? 'opacity-100' : 'opacity-0'}`}
       >
         <Link
           to="#about"

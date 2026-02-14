@@ -32,7 +32,7 @@ export function Footer() {
         <p className="text-sm text-muted-foreground">
           {"Designed & Built by "}
           <span className="text-foreground font-medium hover:text-primary transition-colors cursor-default">
-            Puspa BC
+            Puspa
           </span>
         </p>
 
