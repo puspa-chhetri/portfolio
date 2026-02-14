@@ -40,8 +40,6 @@ export function About() {
         <span className="h-px flex-1 bg-border max-w-xs" />
       </h2>
 
-
-
       <div className="grid gap-8 lg:grid-cols-3">
         <div
           className={`lg:col-span-2 space-y-4 text-muted-foreground leading-relaxed transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"

@@ -53,7 +53,7 @@ export function Hero() {
   }, [displayedRole, isDeleting, roleIndex])
 
   return (
-    <section className="min-h-screen flex flex-col justify-between py-12 lg:py-24">
+    <section className="min-h-screen flex flex-col top-0 justify-between py-12 lg:py-24">
       <div className="flex-1 flex flex-col justify-center">
         <div className="space-y-6">
           {/* Animated greeting */}

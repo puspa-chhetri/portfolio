@@ -7,16 +7,14 @@ import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
 import { TanStackDevtools } from '@tanstack/react-devtools'
 
 import Header from '../components/Header'
-
-import ClerkProvider from '../integrations/clerk/provider'
-
-import ConvexProvider from '../integrations/convex/provider'
-
-import TanStackQueryDevtools from '../integrations/tanstack-query/devtools'
+import GlitterBackground from '../components/GlitterBackground'
 
 import appCss from '../styles.css?url'
 
 import type { QueryClient } from '@tanstack/react-query'
+
+import { ThemeProvider } from '../contexts/ThemeProvider'
+import { useTheme } from '../contexts/ThemeProvider'
 
 interface MyRouterContext {
   queryClient: QueryClient
@@ -31,9 +29,6 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
       {
         name: 'viewport',
         content: 'width=device-width, initial-scale=1',
-      },
-      {
-        title: 'TanStack Start Starter',
       },
     ],
     links: [
@@ -54,26 +49,37 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <HeadContent />
       </head>
       <body>
-        <ClerkProvider>
-          <ConvexProvider>
+        <ThemeProvider defaultTheme="system" storageKey="portfolio-theme">
+          <ThemeAwareLayout>
             <Header />
             {children}
-            <TanStackDevtools
-              config={{
-                position: 'bottom-right',
-              }}
-              plugins={[
-                {
-                  name: 'Tanstack Router',
-                  render: <TanStackRouterDevtoolsPanel />,
-                },
-                TanStackQueryDevtools,
-              ]}
-            />
-          </ConvexProvider>
-        </ClerkProvider>
+          </ThemeAwareLayout>
+          <TanStackDevtools
+            config={{
+              position: 'bottom-right',
+            }}
+            plugins={[
+              {
+                name: 'Tanstack Router',
+                render: <TanStackRouterDevtoolsPanel />,
+              },
+            ]}
+          />
+        </ThemeProvider>
         <Scripts />
       </body>
     </html>
   )
+}
+
+function ThemeAwareLayout({ children }: { children: React.ReactNode }) {
+  const { theme } = useTheme();
+
+  return (
+    <div className="relative min-h-screen">
+      {/* Glitter background for dark theme only */}
+      {theme === 'dark' && <GlitterBackground />}
+      {children}
+    </div>
+  );
 }
