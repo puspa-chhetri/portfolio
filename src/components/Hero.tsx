@@ -1,12 +1,11 @@
 
 import { Link } from "@tanstack/react-router"
-import { Github, Linkedin, Twitter, Mail, ArrowDown, ArrowUp } from "lucide-react"
+import { Github, Linkedin, Mail, ArrowDown, ArrowUp } from "lucide-react"
 import { useEffect, useState } from "react"
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
+  { icon: Github, href: "https://github.com/puspa-chhetri", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/puspa-b-a26a47282/", label: "LinkedIn" },
   { icon: Mail, href: "mailto:puspachhetri121@gmail.com", label: "Email" },
 ]
 
@@ -81,7 +80,7 @@ export function Hero() {
   }
 
   return (
-    <section className="min-h-screen flex flex-col top-0 justify-between py-12 lg:py-6">
+    <section className="min-h-screen flex flex-col justify-between pb-6 lg:py-6">
       <div className="flex-1 flex flex-col justify-center">
         <div className="space-y-1">
           {/* Animated greeting */}

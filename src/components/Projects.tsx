@@ -234,7 +234,7 @@ export function Projects() {
         style={{ transitionDelay: '1100ms' }}
       >
         <Link
-          to="https://github.com"
+          to="https://github.com/puspa-chhetri"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-6 py-3 border border-primary text-primary rounded-md font-medium hover:bg-primary/10 transition-all duration-300 group"

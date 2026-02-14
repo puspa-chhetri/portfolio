@@ -131,7 +131,7 @@ export function Experience() {
           ))}
         </div>
       </div>
-
+      {/*
       <div
         className={`mt-12 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
         style={{ transitionDelay: '800ms' }}
@@ -144,6 +144,7 @@ export function Experience() {
           <ArrowUpRight className="w-4 h-4 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />
         </Link>
       </div>
+      */}
     </section>
   )
 }
