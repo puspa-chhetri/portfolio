@@ -7,14 +7,12 @@ import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
 import { TanStackDevtools } from '@tanstack/react-devtools'
 
 import Header from '../components/Header'
-import GlitterBackground from '../components/GlitterBackground'
 
 import appCss from '../styles.css?url'
 
 import type { QueryClient } from '@tanstack/react-query'
 
 import { ThemeProvider } from '../contexts/ThemeProvider'
-import { useTheme } from '../contexts/ThemeProvider'
 
 interface MyRouterContext {
   queryClient: QueryClient
@@ -50,10 +48,8 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         <ThemeProvider defaultTheme="system" storageKey="portfolio-theme">
-          <ThemeAwareLayout>
-            <Header />
-            {children}
-          </ThemeAwareLayout>
+          <Header />
+          {children}
           <TanStackDevtools
             config={{
               position: 'bottom-right',
@@ -72,14 +68,4 @@ function RootDocument({ children }: { children: React.ReactNode }) {
   )
 }
 
-function ThemeAwareLayout({ children }: { children: React.ReactNode }) {
-  const { theme } = useTheme();
 
-  return (
-    <div className="relative min-h-screen">
-      {/* Glitter background for dark theme only */}
-      {theme === 'dark' && <GlitterBackground />}
-      {children}
-    </div>
-  );
-}
