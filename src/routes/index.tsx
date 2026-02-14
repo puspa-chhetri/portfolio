@@ -31,15 +31,15 @@ function App() {
         }}
       />
 
-      <div className="mx-auto max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
+      <div className="mx-auto max-w-screen-xl px-6 pt-2 pb-12 md:px-12 md:pt-6 md:pb-20 lg:px-24 lg:py-0">
         <div className="lg:flex lg:justify-between lg:gap-4">
           {/* Left Column - Sticky Header */}
-          <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:py-24">
+          <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:py-2">
             <Hero />
           </header>
 
           {/* Right Column - Scrollable Content */}
-          <main className="lg:w-1/2 lg:py-24">
+          <main className="lg:w-1/2 lg:py-6">
             <About />
             <Experience />
             <Projects />
@@ -65,13 +65,6 @@ function App() {
           }}
         />
 
-        {/* Noise texture overlay */}
-        <div
-          className="absolute inset-0 opacity-[0.015]"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`
-          }}
-        />
       </div>
     </div>
   )

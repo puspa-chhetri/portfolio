@@ -71,15 +71,3 @@ function RootDocument({ children }: { children: React.ReactNode }) {
     </html>
   )
 }
-
-function ThemeAwareLayout({ children }: { children: React.ReactNode }) {
-  const { theme } = useTheme();
-
-  return (
-    <div className="relative min-h-screen">
-      {/* Glitter background for dark theme only */}
-      {theme === 'dark' && <GlitterBackground />}
-      {children}
-    </div>
-  );
-}
