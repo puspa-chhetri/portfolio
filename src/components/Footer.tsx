@@ -3,10 +3,9 @@ import { Link } from "@tanstack/react-router"
 import { Github, Linkedin, Twitter, Mail, Heart } from "lucide-react"
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-  { icon: Mail, href: "mailto:hello@example.com", label: "Email" },
+  { icon: Github, href: "https://github.com/puspa-chhetri", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/puspa-b-a26a47282/", label: "LinkedIn" },
+  { icon: Mail, href: "mailto:puspachhetri121@gmail.com", label: "Email" },
 ]
 
 export function Footer() {
